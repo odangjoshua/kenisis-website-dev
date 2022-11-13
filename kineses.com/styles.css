@@ -1,0 +1,154 @@
+body, ul, ui, h1, h2, a{ 
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    background-color: rgb(110, 3, 110);
+    text-align: center;
+    padding: 10px 10px;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+header h1{
+    color: white;
+    border: 3px white solid;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 40px;
+    font-size: 1.4em;
+
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    color: rgb(80, 164, 219);
+    font-size: 40px;
+   
+}
+
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 63px;
+}
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 14px;
+}
+nav li a{
+   text-decoration: none;
+   color: #4B4B4B; 
+}
+nav li a.home{
+    color:rgb(110, 3, 110)
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: rgb(110, 3, 110);
+    text-align: center;
+}
+article p{
+    line-height: 1.4em;
+    color: #4B4B4B;
+}
+h2{
+    text-align: center;
+    color: rgb(110, 3, 110);
+}
+
+.images{
+    text-align: center;
+    margin: 80px o;
+    
+}
+.images li{
+    display: inline-block;
+    width: 20%;
+    margin: 20px 5px;
+}
+.images li img{
+    max-width: 50%;
+}
+.reach{
+    background-color: #F4F4F4;
+    padding: 40px 20px;
+    color: #4B4B4B;
+    text-align: center;
+}
+.reach h2{
+    text-align: center;
+    color: rgb(110, 3, 110);
+}
+.reach form{
+    text-align: center;
+    font-size: 80px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 18px;
+    border: 4px solid white;
+}
+footer{
+    background-color: rgb(110, 3, 110);
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/* pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -7px;
+}
+
+form input:focus{
+    background-color: rgb(226, 198, 226);
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1400px){
+
+    .banner .welcome h2{
+        font-size: 20px;
+
+}
